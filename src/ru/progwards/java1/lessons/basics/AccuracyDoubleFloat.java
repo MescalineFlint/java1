@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.basics;
 
 public class AccuracyDoubleFloat {
     public static double volumeBallDouble(double radius){
-        double V1 = 4 / 3 * 3.14 * (radius * radius * radius);
+        double V1 = 4.0 / 3.0 * 3.14 * (radius * radius * radius);
         return V1;
     }
     public static float volumeBallFloat(float radius){
