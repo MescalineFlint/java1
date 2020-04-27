@@ -7,12 +7,15 @@ public class TriangleInfo {
     }
 
     public static boolean isRightTriangle(int a, int b, int c) {
-        boolean pif = a * a + b * b == c * c;
+        boolean pif = a * a + b * b == c * c || b * b + c * c == a * a || a * a + c * c == a * a;
         return pif;
     }
 
     public static boolean isIsoscelesTriangle(int a, int b, int c) {
         boolean rav = a == b || a == c || c == b;
         return rav;
+    }
+    public static void main(String[] args) {
+        System.out.println(isRightTriangle(3,4,5));
     }
 }
