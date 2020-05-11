@@ -11,8 +11,8 @@ public class Dz {
         }
         return f;
     }
-
-    public static void main(String[] args) {
-        System.out.println(factorial(19));
-    }
+//    public static void main(String[] args) {
+//        System.out.println((2,1));
+//    }
 }
+
