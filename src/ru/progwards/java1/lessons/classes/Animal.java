@@ -35,7 +35,7 @@ public class Animal {
         return type2;
     }
     public String toStringFull(){
-        return ("I am " + getKind() + ", eat " + getFoodKind() + calculateFoodWeight());
+        return ("I am " + getKind() + ", eat " + getFoodKind() + " " + calculateFoodWeight());
     }
     public String toString(){
         return ("I am " + getKind() + ", eat " + getFoodKind());
