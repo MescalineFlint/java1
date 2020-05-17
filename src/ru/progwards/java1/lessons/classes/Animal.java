@@ -1,6 +1,8 @@
 package ru.progwards.java1.lessons.classes;
 
 public class Animal {
+    String type1, type2;
+    double weight;
     enum AnimalKind {
         ANIMAL,
         COW,
@@ -12,9 +14,17 @@ public class Animal {
         HAY,
         CORN,
     }
-    public double Animal(double weight){
-        double w = weight;
-        return w;
+    public Animal(double weight){
+        this.weight = weight;
+    }
+    public double getWeight(){
+        return weight;
+    }
+    public double getFoodCoeff(){
+        return 0.02;
+    }
+    public double calculateFoodWeight(){
+        return weight * getFoodCoeff();
     }
     public AnimalKind getKind(){
         AnimalKind type1 = AnimalKind.ANIMAL;
@@ -24,12 +34,21 @@ public class Animal {
         FoodKind type2 = FoodKind.UNKNOWN;
         return type2;
     }
+    public String toStringFull(){
+        return ("I am" + getKind() + ", eat " + getFoodKind() + calculateFoodWeight());
+    }
     public String toString(){
-        System.out.println("I am" + getKind() + ", eat " + getFoodKind());
-        return toString();
+        return ("I am" + getKind() + ", eat " + getFoodKind());
     }
 }
 class Cow extends Animal{
+    public Cow (double weight) {
+        super(weight);
+    }
+    @Override
+    public double getFoodCoeff(){
+        return 0.05;
+    }
     @Override
     public AnimalKind getKind(){
         AnimalKind type1 = AnimalKind.COW;
@@ -42,6 +61,13 @@ class Cow extends Animal{
     }
 }
 class Hamster extends Animal{
+    public Hamster (double weight) {
+        super(weight);
+    }
+    @Override
+    public double getFoodCoeff(){
+        return 0.03;
+    }
     @Override
     public AnimalKind getKind(){
         AnimalKind type1 = AnimalKind.HAMSTER;
@@ -54,6 +80,13 @@ class Hamster extends Animal{
     }
 }
 class Duck extends Animal{
+    public Duck (double weight) {
+        super(weight);
+    }
+    @Override
+    public double getFoodCoeff(){
+        return 0.04;
+    }
     @Override
     public AnimalKind getKind(){
         AnimalKind type1 = AnimalKind.DUCK;
