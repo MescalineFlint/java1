@@ -1,13 +1,14 @@
 package ru.progwards.java1.lessons.classes;
 
 public class ComplexNum {
-    int a, b, z;
+    int a, b;
+
     public ComplexNum(int a, int b){
-        ;
+
     }
     public String toString(){
 
-        return (a + b +"i");
+        return (a + "+" + b +"i");
     }
     public ComplexNum add(ComplexNum num){
 

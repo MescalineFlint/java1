@@ -10,6 +10,7 @@ public class ArraySort {
                 int z = a[i];
                 a[i] = a[i + 1];
                 a[i + 1] = z;
+
             }
 
             for (int j = 1; j <a.length; j++) {
