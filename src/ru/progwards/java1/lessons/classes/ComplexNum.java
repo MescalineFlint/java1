@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.classes;
 public class ComplexNum {
     int a, b, z;
     public ComplexNum(int a, int b){
-         ;
+        ;
     }
     public String toString(){
 
@@ -13,7 +13,7 @@ public class ComplexNum {
 
         return new ComplexNum(this.a + num.a, this.b + num.b);
 
-   }
+    }
     public ComplexNum sub(ComplexNum num){
 
         return new ComplexNum(this.a - num.a, this.b - num.b);
