@@ -4,6 +4,8 @@ public class ComplexNum {
     int a, b;
 
     public ComplexNum(int a, int b){
+        this.a = a;
+        this.b = b;
 
     }
     public String toString(){
