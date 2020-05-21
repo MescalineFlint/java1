@@ -15,13 +15,10 @@ public class Person {
         return name;
     }
     public int getAge(){
+
         return age;
     }
     public String getCountry(){
         return country;
-    }
-
-    public static void main(String[] args) {
-
     }
 }

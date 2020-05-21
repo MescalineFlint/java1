@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.test;
 
 public class Calculator {
-    int result;
+    private int result;
     public Calculator(){
         result = 0;
     }
@@ -18,10 +18,7 @@ public class Calculator {
         return result;
     }
     public int getResult(){
+
         return result;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
