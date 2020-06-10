@@ -6,10 +6,13 @@ public class DIntArray {
 
     private int a[];
 
+
     public void add(int num){
 
         int[] b = Arrays.copyOf(a, a.length + 1);
-        b[b.length -1] = num;
+        b[a.length -1] = num;
+
+
 
     }
     public void atInsert(int pos, int num){
@@ -26,6 +29,13 @@ public class DIntArray {
     }
     public int at(int pos){
         return a[pos];
+    }
+
+    public static void main(String[] args) {
+
+        int a[] = {2,4,6,7,9,23};
+
+
     }
 }
 
