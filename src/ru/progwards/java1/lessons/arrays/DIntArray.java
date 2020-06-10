@@ -5,13 +5,23 @@ import java.util.Arrays;
 public class DIntArray {
 
     private int a[];
+    int length;
 
+    public DIntArray() {
+        a = new int[10];
+        length = 0;
+    }
+    public void doubleArray(){
+        int [] b = new int[a.length];
+
+    }
 
     public void add(int num){
+        if (length == a.length)
+            this.doubleArray();
 
-        int[] b = Arrays.copyOf(a, a.length + 1);
-        b[a.length -1] = num;
-
+        int[] b = Arrays.copyOf(a, a.length * 2);
+        b[b.length -1] = num;
 
 
     }
@@ -31,11 +41,9 @@ public class DIntArray {
         return a[pos];
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         int a[] = {2,4,6,7,9,23};
-
-
     }
 }
 
