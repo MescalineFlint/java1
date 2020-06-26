@@ -54,6 +54,8 @@ public class DIntArray {
         return a[pos];
     }
 
+
+
     public static void main(String[] args) {
        DIntArray a = new DIntArray();
         a.add(2);
@@ -63,6 +65,8 @@ public class DIntArray {
         a.atDelete(2);
         a.atInsert(2,10);
         System.out.println(a.at(2));
+        System.out.println(a.toString());
+
 
     }
 }
