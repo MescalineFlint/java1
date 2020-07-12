@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class SumBits {
-    public static int SumBits(byte value) {
+    public static int sumBits(byte value) {
         byte count = 0;
         while (count < 8) {
             if ((value & 0b00000001) == 0b00000001) {
