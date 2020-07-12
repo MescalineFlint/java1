@@ -1,24 +1,14 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class SumBits {
-    public static int sumBits(byte value){
-
-        int sum = value & 1;
-        
-
-
-
-        for (int y = 1; y < 8 ; y ++) {
-            int x = value << y;
-
-            int z = value & x;
-
-            sum += z;
+    public static int SumBits(byte value) {
+        byte count = 0;
+        while (count < 8) {
+            if ((value & 0b00000001) == 0b00000001) {
+                count++;
+            }
+            value >>= 1;
         }
-        return sum;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(sumBits((byte) 1001000));
+        return count;
     }
 }
